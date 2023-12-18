@@ -1,0 +1,13 @@
+create TABLE Table1(student_id int PRIMARY KEY, name NVARCHAR2(30) NOT NULL,surname NVARCHAR2(30) NOT NULL, Email VARCHAR(100) UNIQUE, Fincode NVARCHAR2(30) UNIQUE);
+select*from Table1;
+Insert into Table1( Student_id, name, Surname, Email, fincode) values(515854, 'Khavar', 'Jabbarli', 'khavarjavarjabbarli@gmail.com','81qde3g');
+select *from Table1;
+alter table Table1 add Faculty NVARCHAR2(40);
+select* from Table1;
+update Table1 set faculty='ComputerScience' where student_id=51545854;
+select* from Table1;
+Alter TABLE  Table1 rename to ADAstudentDATA;
+select * from ADAstudentDATA;
+drop table ADAstudentDATA;
+//select* from ADAstudentDATA;
+
